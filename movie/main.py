@@ -12,10 +12,10 @@ import csv
 
 # load the nlp model and tfidf vectorizer from disk
 #filename = 'nlp_model.pkl'
-file = open('/Users/shahd/Desktop/Devarshee/Vs studio/ML/Recommendation sys/movie/nlp_model.pkl', 'rb')
+file = open('C:/Users/shahd/Desktop/Resume/ML_Recommendation/movie/nlp_model.pkl', 'rb')
 #clf = pickle.load(open(filename, 'rb'))
 clf = pickle.load(file)
-vectorizer = pickle.load(open('/Users/shahd/Desktop/Devarshee/Vs studio/ML/Recommendation sys/movie/tranform.pkl','rb'))
+vectorizer = pickle.load(open('ML_Recommendation/movie/tranform.pkl','rb'))
 
 def create_similarity():
     data = pd.read_csv('final_data.csv')
